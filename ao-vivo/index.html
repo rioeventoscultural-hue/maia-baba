@@ -1,0 +1,9 @@
+<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"><title>MAIA AO VIVO</title>
+<style>body{margin:0;background:#000;overflow:hidden}video{width:100vw;height:100vh;object-fit:cover}#top{position:fixed;top:20px;left:20px;color:#fff;background:rgba(0,0,0,.7);padding:10px 16px;border-radius:20px;font-family:Arial}#zap{position:fixed;bottom:24px;right:24px;background:#25D366;color:#fff;padding:14px 22px;border-radius:30px;text-decoration:none;font-family:Arial;font-weight:bold}#erro{display:none;position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;background:#3AA99E;padding:24px;border-radius:16px;text-align:center;font-family:Arial;font-weight:bold}</style>
+</head><body>
+<video id="v" autoplay playsinline muted></video>
+<div id="top">🔴 MAIA AO VIVO</div>
+<a id="zap" href="https://wa.me/5517991009755" target="_blank">WhatsApp</a>
+<div id="erro">Essa TV precisa ter camera. Permita camera e microfone.</div>
+<script>async function s(){try{const m=await navigator.mediaDevices.getUserMedia({video:true,audio:true});document.getElementById('v').srcObject=m}catch(e){document.getElementById('erro').style.display='block'}}s()</script>
+</body></html>
